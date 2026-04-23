@@ -15,15 +15,12 @@ jobs:
         run: |
           echo "This is DevOps"
           uname -a
-          
-      - name: Check the docker installation
+
+      - name: Check Docker installation
         run: |
-          docker
+          docker --version
           docker images
-          
+
       - name: Run Docker Container
         run: |
-          docker run hello world 
-          
-
-         
+          docker run hello-world
